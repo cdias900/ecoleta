@@ -1,9 +1,5 @@
-import express from 'express'
+import app from './app'
 
-const app = express()
+const port = process.env.PORT || 3001
 
-app.get('/', (req, res) => {
-  res.json({ hello: 'world' })
-})
-
-app.listen(3001)
+app.listen(port)

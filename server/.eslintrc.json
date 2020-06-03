@@ -21,6 +21,8 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "camelcase": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }]
   }
 }
